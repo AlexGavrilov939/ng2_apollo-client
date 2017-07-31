@@ -1,5 +1,5 @@
 {
-  "name": "apollo",
+  "name": "apollo2",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^4.0.0",
+    "@angular/animations": "^4.3.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
@@ -21,11 +21,18 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@ngrx/core": "^1.2.0",
+    "@ngrx/effects": "^2.0.4",
+    "@ngrx/router-store": "^1.2.6",
+    "@ngrx/store": "^2.2.3",
+    "@ngrx/store-devtools": "^3.2.4",
     "apollo-angular": "^0.13.0",
     "apollo-client": "^1.9.0-1",
+    "code-point-at": "^1.1.0",
     "core-js": "^2.4.1",
     "graphql-tag": "^2.4.2",
     "rxjs": "^5.1.0",
+    "uuid": "^3.1.0",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
