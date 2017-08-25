@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { StoreModule } from '@ngrx/store';
+import { routerReducer, RouterStoreModule } from '@ngrx/router-store';
 
 import { ApolloClient, createNetworkInterface } from 'apollo-client';
 import { ApolloModule } from 'apollo-angular';
@@ -29,6 +31,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    RouterStoreModule.connectRouter(),
+    StoreModule.provideStore({ router: routerReducer }, {
+      router: {
+        path: window.location.pathname + window.location.search
+      }
+    }),
     ApolloModule.forRoot(providerClient)
   ],
   providers: [],

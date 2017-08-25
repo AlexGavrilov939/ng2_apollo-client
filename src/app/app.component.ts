@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Apollo } from 'apollo-angular';
 import gql from 'graphql-tag';
+import {Store} from "@ngrx/store";
 
 const CurrentUserForProfile = gql`
   query Users {
@@ -21,7 +22,7 @@ interface QueryResponse{
 export class AppComponent implements  OnInit {
 
   constructor(private apollo: Apollo) {
-
+    //console.log('>>>STORE', this.store);
   }
 
   title = 'app';
